@@ -721,12 +721,17 @@ def render_dashboard_body() -> None:
     df, error = dashboard_data()
 
     if error:
-    st.error(
-        "Non se puideron cargar os datos reais. "
-        "Revisa a conexión con Supabase."
-    )
-    return
+        st.error(
+            "Non se puideron cargar os datos reais. "
+            "Revisa a conexión con Supabase."
+        )
+        return
 
+    if df is None or df.empty:
+        st.info(
+            "Aínda non hai participacións completadas."
+        )
+        return
     if df is None or df.empty:
         st.info(
             "Aínda non hai participacións completadas."
