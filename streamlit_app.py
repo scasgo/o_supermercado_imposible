@@ -129,9 +129,9 @@ def as_bool(value) -> bool:
     return str(value).strip().lower() in {"1", "true", "yes", "on", "si", "sí"}
 
 
-APP_MODE = str(setting("APP_MODE", "demo")).lower()
-DASHBOARD_DEMO = as_bool(setting("DASHBOARD_DEMO", True))
-KIOSK_MODE = as_bool(setting("KIOSK_MODE", False))
+APP_MODE = "production"
+DASHBOARD_DEMO = False
+KIOSK_MODE = False
 IS_DEMO_PARTICIPANT = APP_MODE != "production"
 
 
