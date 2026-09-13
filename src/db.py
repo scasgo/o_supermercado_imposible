@@ -37,12 +37,12 @@ def upsert_participant(
             .execute()
         )
         return True, None
-    except Exception as exc:
+        except Exception as exc:
         print(
-            f"SUPABASE WRITE ERROR: {type(exc).__name__}: {exc}",
+            f"SUPABASE DASHBOARD ERROR: {type(exc).__name__}: {exc}",
             flush=True,
         )
-        return False, str(exc)
+        return None, str(exc)
 
 
 def fetch_participant(participant_id: str) -> tuple[dict[str, Any] | None, str | None]:
