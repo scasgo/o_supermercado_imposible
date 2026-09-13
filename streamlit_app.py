@@ -719,12 +719,19 @@ def dashboard_data() -> tuple[pd.DataFrame | None, str | None]:
 
 def render_dashboard_body() -> None:
     df, error = dashboard_data()
+
     if error:
-    st.error(
-        "Non se puideron cargar os datos reais.\n\n"
-        f"Erro técnico: {error}"
-    )
-    return
+        st.error(
+            "Non se puideron cargar os datos reais.\n\n"
+            f"Erro técnico: {error}"
+        )
+        return
+
+    if df is None or df.empty:
+        st.info(
+            "Aínda non hai participacións completadas."
+        )
+        return
     if df is None or df.empty:
         st.info("Aínda non hai participacións completadas.")
         return
