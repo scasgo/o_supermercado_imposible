@@ -1,0 +1,25 @@
+id,name,flavor,price_eur,price_band,nutrition_level,nutrition_text,sustainability_level,sustainability_text,priority_tag
+P01,Cacao Alba,chocolate,2.49,menos_3,2,Equilibrado,1,Envase convencional,prezo
+P02,Cacao Brétema,chocolate,2.79,menos_3,1,Receita máis doce,2,Envase lixeiro,sabor
+P03,Cacao Lúa,chocolate,3.29,de_3_a_4,3,Alto en fibra,1,Envase convencional,nutricion
+P04,Cacao Ronsel,chocolate,3.69,de_3_a_4,2,Equilibrado,3,Ingredientes de proximidade,sustentabilidade
+P05,Cacao Noite,chocolate,4.29,mais_4,1,Receita máis doce,2,Envase lixeiro,sabor
+P06,Cacao Terra,chocolate,4.69,mais_4,3,Alto en fibra,2,Envase lixeiro,nutricion
+P07,Froita Brisa,froitas,2.39,menos_3,1,Receita máis doce,3,Ingredientes de proximidade,sustentabilidade
+P08,Froita Ría,froitas,2.89,menos_3,3,Alto en fibra,1,Envase convencional,nutricion
+P09,Froita Xardín,froitas,3.19,de_3_a_4,2,Equilibrado,1,Envase convencional,prezo
+P10,Froita Nube,froitas,3.79,de_3_a_4,1,Receita máis doce,2,Envase lixeiro,sabor
+P11,Froita Fraga,froitas,4.19,mais_4,2,Equilibrado,3,Ingredientes de proximidade,sustentabilidade
+P12,Froita Alba,froitas,4.59,mais_4,2,Equilibrado,2,Envase lixeiro,sabor
+P13,Mel do Monte,mel_froitos_secos,2.59,menos_3,3,Alto en fibra,1,Envase convencional,nutricion
+P14,Abelá Clara,mel_froitos_secos,2.99,menos_3,2,Equilibrado,2,Envase lixeiro,prezo
+P15,Noces do Prado,mel_froitos_secos,3.39,de_3_a_4,2,Equilibrado,3,Ingredientes de proximidade,sustentabilidade
+P16,Mel Ronsel,mel_froitos_secos,3.89,de_3_a_4,1,Receita máis doce,2,Envase lixeiro,sabor
+P17,Abelá Lume,mel_froitos_secos,4.09,mais_4,2,Equilibrado,1,Envase convencional,prezo
+P18,Noces Brétema,mel_froitos_secos,4.79,mais_4,2,Equilibrado,3,Ingredientes de proximidade,sustentabilidade
+P19,Avena Clara,neutro_avena,2.29,menos_3,2,Equilibrado,1,Envase convencional,sabor
+P20,Avena Ría,neutro_avena,2.69,menos_3,1,Receita simple,3,Ingredientes de proximidade,sustentabilidade
+P21,Avena Campo,neutro_avena,3.09,de_3_a_4,3,Alto en fibra,2,Envase lixeiro,nutricion
+P22,Avena Lúa,neutro_avena,3.59,de_3_a_4,2,Equilibrado,1,Envase convencional,prezo
+P23,Avena Terra,neutro_avena,4.39,mais_4,3,Alto en fibra,2,Envase lixeiro,nutricion
+P24,Avena Brétema,neutro_avena,4.89,mais_4,2,Equilibrado,2,Envase lixeiro,prezo
