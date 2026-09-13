@@ -26,11 +26,22 @@ def get_client() -> Client:
     return create_client(url, key)
 
 
-def upsert_participant(payload: dict[str, Any]) -> tuple[bool, str | None]:
+def upsert_participant(
+    payload: dict[str, Any],
+) -> tuple[bool, str | None]:
     try:
-        get_client().table(TABLE_NAME).upsert(payload, on_conflict="participant_id").execute()
+        (
+            get_client()
+            .table(TABLE_NAME)
+            .upsert(payload, on_conflict="participant_id")
+            .execute()
+        )
         return True, None
-    except Exception as exc:  # shown only as a generic public message by the app
+    except Exception as exc:
+        print(
+            f"SUPABASE WRITE ERROR: {type(exc).__name__}: {exc}",
+            flush=True,
+        )
         return False, str(exc)
 
 
