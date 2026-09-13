@@ -132,7 +132,7 @@ def as_bool(value) -> bool:
 APP_MODE = "production"
 DASHBOARD_DEMO = False
 KIOSK_MODE = False
-
+IS_DEMO_PARTICIPANT = APP_MODE != "production"
 
 
 def utc_now_iso() -> str:
